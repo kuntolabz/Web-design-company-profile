@@ -60,6 +60,39 @@ nav ul li a:hover{
     color: var(--dark);
 }
 
+#hero-container{
+    background-image: url('../image/hero_image.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.text {
+    text-align: center;
+    color: var(--cyan);
+    font-size: 24px;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--green);
+    padding: 10px;
+    color: var(--brown);
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: var(--dark);
+    color: var(--cyan);
+}
+
 /* versi tablet */
 @media screen and (max-width:768px) {
     /*  */
@@ -106,4 +139,6 @@ nav ul li a:hover{
     #nav-container .nav-flex input:checked ~ nav {
         display: block;
     }
+
+
 }
