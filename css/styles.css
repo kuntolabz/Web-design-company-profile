@@ -93,6 +93,37 @@ nav ul li a:hover{
     color: var(--cyan);
 }
 
+main {
+    width: 80%;
+    margin: auto;
+}
+/* about */
+#about h1{
+    text-align: center;
+    color: var(--dark);
+    margin-top: 80px;
+}
+#about .about-deskripsi{
+    text-align: center;
+    color: var(--dark);
+}
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px auto;
+}
+.about-image, .about-text {
+    width: 50%;
+    margin: 14px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
 /* versi tablet */
 @media screen and (max-width:768px) {
     /*  */
@@ -138,6 +169,15 @@ nav ul li a:hover{
     /* menampilkan menu*/
     #nav-container .nav-flex input:checked ~ nav {
         display: block;
+    }
+
+    /* about */
+    .about-flex {
+        flex-direction: column;
+    }
+    .about-image, .about-text {
+        width: auto;
+       
     }
 
 
