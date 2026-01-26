@@ -123,6 +123,38 @@ main {
     border-radius: 10px;
     object-fit: cover;
 }
+/* services */
+#services h1{
+    text-align: center;
+    color: var(--dark);
+    margin-top: 80px;
+}
+#services .services-deskripsi{
+    text-align: center;
+    color: var(--dark);
+}
+
+.services-flex {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.services-items{
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+}
+.services-items h3{
+    text-transform: uppercase;
+}
+
+.services-items .fas{
+    font-size: 48px;
+    color: var(--peach);
+}
 
 /* versi tablet */
 @media screen and (max-width:768px) {
@@ -180,5 +212,17 @@ main {
        
     }
 
+    /* services */
+    .services-items{
+        width: 50%;
+    }
 
+}
+
+/* smart phone */
+@media screen and (max-width:480px) {
+    /* services */
+    .services-items{
+        width: 100%;
+    }
 }
