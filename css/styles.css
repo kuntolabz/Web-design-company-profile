@@ -123,6 +123,7 @@ main {
     border-radius: 10px;
     object-fit: cover;
 }
+
 /* services */
 #services h1{
     text-align: center;
@@ -155,6 +156,76 @@ main {
     font-size: 48px;
     color: var(--peach);
 }
+
+/* catalog */
+#catalog h1{
+    text-align: center;
+    color: var(--dark);
+    margin-top: 80px;
+}
+#catalog .catalog-desc{
+    text-align: center;
+    color: var(--dark);
+}
+
+.catalog-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+.catalog-items{
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.catalog-items img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.catalog-items h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 10px 0;
+    color: var(--dark);
+}
+.catalog-items p{
+    color: var(--dark);
+    font-size: 14px;
+}
+.price-chat-container{
+    border-bottom: 2px solid var(--peach);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.price-harga span{
+    font-size: 14px;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.chat-button a{
+    text-decoration: none;
+    background-color: var(--green);
+    color: var(--brown);
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.chat-button a:hover{
+    background-color: var(--dark);
+    color: var(--cyan);
+}
+
 
 /* versi tablet */
 @media screen and (max-width:768px) {
@@ -217,12 +288,22 @@ main {
         width: 50%;
     }
 
+    /* catalog */
+    .catalog-items{
+        width: 50%;
+    }
+
 }
 
 /* smart phone */
 @media screen and (max-width:480px) {
     /* services */
     .services-items{
+        width: 100%;
+    }
+
+    /* catalog */
+    .catalog-items{
         width: 100%;
     }
 }
