@@ -342,6 +342,50 @@ main {
     color: var(--cyan);
 }
 
+/* footer */
+.footer-container{
+    background-color: var(--cyan);
+    padding: 30px 5px;
+    margin-top: 50px;
+    color: var(--dark);
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-container a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.footer-container a:hover{
+    color: var(--peach);
+}
+
+.footer-flex{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.footer-flex section{
+    width: 25%;
+    margin: 10px 0;
+}
+
+.footer-flex section ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-copy-right{
+   width: 100%;
+   display: flex;
+   margin-top: 50px;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+   padding: 10px 0;
+}
 /* versi tablet */
 @media screen and (max-width:768px) {
     /*  */
@@ -418,6 +462,10 @@ main {
         width: auto;
     }
 
+    .footer-flex section{
+        width: 48%;
+    }
+
 }
 
 /* smart phone */
@@ -434,5 +482,10 @@ main {
 
     .portofolio-items{
         width: 100%;
+    }
+
+    .footer-flex section{
+        width: 100%;
+        margin-top: 10px;
     }
 }
