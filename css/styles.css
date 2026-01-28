@@ -15,11 +15,15 @@ html,body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+html{
+    scroll-behavior: smooth;
+}
 
 #nav-container{
     background-color: var(--cyan);
     position: sticky;
     top: 0px;
+    z-index: 100;
 }
 
 .nav-flex {
@@ -247,12 +251,20 @@ main {
 .portofolio-items{
     width: 25%;
     padding: 10px;
+    overflow: hidden;
 }
 
 .portofolio-items img{
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portofolio-items img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+    opacity: 0.8;
 }
 
 /* contact */
