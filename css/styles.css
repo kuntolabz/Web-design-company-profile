@@ -226,6 +226,34 @@ main {
     color: var(--cyan);
 }
 
+/* portfolio */
+#portofolio h1{
+    text-align: center;
+    color: var(--dark);
+    margin-top: 80px;
+}
+#portofolio .portofolio-deskripsi{
+    text-align: center;
+    color: var(--dark);
+}
+
+.portofolio-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+.portofolio-items{
+    width: 25%;
+    padding: 10px;
+}
+
+.portofolio-items img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
 /* versi tablet */
 @media screen and (max-width:768px) {
@@ -292,6 +320,9 @@ main {
     .catalog-items{
         width: 50%;
     }
+    .portofolio-items{
+        width: 50%;
+    }
 
 }
 
@@ -304,6 +335,10 @@ main {
 
     /* catalog */
     .catalog-items{
+        width: 100%;
+    }
+
+    .portofolio-items{
         width: 100%;
     }
 }
